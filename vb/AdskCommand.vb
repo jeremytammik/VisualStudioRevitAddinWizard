@@ -34,6 +34,11 @@ Public Class AdskCommand
 
     'TODO: Add your code here
 
+    Using tx As New Transaction(doc)
+      tx.Start("$projectname$")
+      tx.Commit()
+    End Using
+
     'Must return some code
     Return Result.Succeeded
   End Function

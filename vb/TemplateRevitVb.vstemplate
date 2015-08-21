@@ -1,8 +1,8 @@
 <VSTemplate Type="Project" Version="2.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
-        <Name>Revit 2015 Addin</Name>
-        <Description>Class library template for a Revit 2015 Visual Basic add-in project</Description>
+        <Name>Revit 2016 Addin</Name>
+        <Description>Class library template for a Revit 2016 Visual Basic add-in project</Description>
         <Icon>TemplateIcon.ico</Icon>
         <ProjectType>VisualBasic</ProjectType>
         <CreateNewFolder>true</CreateNewFolder>
