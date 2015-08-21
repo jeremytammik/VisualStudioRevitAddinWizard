@@ -1,0 +1,22 @@
+<VSTemplate Type="Project" Version="2.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Revit Architecture 2012 Addin</Name>
+        <Description>A basic template project for Revit Architecture 2012 Addin</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>RevitAddin</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    </TemplateData>
+    <TemplateContent>
+        <Project ReplaceParameters="true" File="TemplateRevitCS.csproj">
+            <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.addin">RegisterAddin.addin</ProjectItem>
+            <ProjectItem ReplaceParameters="true">App.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Command.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Properties\AssemblyInfo.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
