@@ -6,7 +6,7 @@
     <Assembly>$projectname$.dll</Assembly>
     <FullClassName>$safeprojectname$.Command</FullClassName>
     <ClientId>$guid1$</ClientId>
-    <VendorId>TBC_</VendorId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>
   <AddIn Type="Application">
@@ -14,7 +14,7 @@
     <Assembly>$projectname$.dll</Assembly>
     <FullClassName>$safeprojectname$.App</FullClassName>
     <ClientId>$guid2$</ClientId>
-    <VendorId>TBC_</VendorId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>
 </RevitAddIns>
