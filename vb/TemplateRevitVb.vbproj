@@ -7,29 +7,34 @@
     <SchemaVersion></SchemaVersion>
     <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>$safeprojectname$</RootNamespace>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <DocumentationFile></DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <StartAction>Program</StartAction>
     <StartProgram>$(ProgramFiles)\Autodesk\Revit 2013\Program\Revit.exe</StartProgram>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <DocumentationFile></DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <StartAction>Program</StartAction>
     <StartProgram>$(ProgramFiles)\Autodesk\Revit 2013\Program\Revit.exe</StartProgram>
   </PropertyGroup>
@@ -43,29 +48,43 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
-    <Compile Include="Command.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Import Include="Autodesk.Revit.ApplicationServices" />
+    <Import Include="Autodesk.Revit.Attributes" />
+    <Import Include="Autodesk.Revit.DB" />
+    <Import Include="Autodesk.Revit.UI" />
+    <Import Include="Autodesk.Revit.UI.Selection" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdskApplication.vb" />
+    <Compile Include="AdskCommand.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$projectname$.addin" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="AfterClean">
 	<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2013\$projectname$.addin" />
 	<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2013\$projectname$.dll" />
   </Target>
   <PropertyGroup>
     <PostBuildEvent>copy "$(ProjectDir)$projectname$.addin" "$(AppData)\Autodesk\REVIT\Addins\2013"
-copy "$destinationdirectory$\bin\debug\$projectname$.dll" "$(AppData)\Autodesk\REVIT\Addins\2013"</PostBuildEvent>
+copy "$(ProjectDir)bin\debug\$projectname$.dll" "$(AppData)\Autodesk\REVIT\Addins\2013"
+</PostBuildEvent>
   </PropertyGroup>
 </Project>

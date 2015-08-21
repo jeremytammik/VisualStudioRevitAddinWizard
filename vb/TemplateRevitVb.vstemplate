@@ -4,7 +4,7 @@
         <Name>Revit 2013 Addin</Name>
         <Description>Class library template for a Revit 2013 add-in project</Description>
         <Icon>TemplateIcon.ico</Icon>
-        <ProjectType>CSharp</ProjectType>
+        <ProjectType>VisualBasic</ProjectType>
         <CreateNewFolder>true</CreateNewFolder>
         <DefaultName>RevitAddin</DefaultName>
         <ProvideDefaultName>true</ProvideDefaultName>
@@ -12,11 +12,11 @@
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     </TemplateData>
     <TemplateContent>
-        <Project ReplaceParameters="true" File="TemplateRevitCS.csproj">
+        <Project ReplaceParameters="true" File="TemplateRevitVB.vbproj">
             <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.addin">RegisterAddin.addin</ProjectItem>
-            <ProjectItem ReplaceParameters="true">App.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true">Command.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true">Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">AdskApplication.vb</ProjectItem>
+            <ProjectItem ReplaceParameters="true">AdskCommand.vb</ProjectItem>
+            <ProjectItem ReplaceParameters="true">My Project\AssemblyInfo.vb</ProjectItem>
         </Project>
     </TemplateContent>
 </VSTemplate>
