@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Autodesk Inc.")]
 [assembly: AssemblyProduct( "Revit Add-In Wizard Template Application" )]
-[assembly: AssemblyCopyright( "Copyright 2013 © Jeremy Tammik Autodesk Inc." )]
+[assembly: AssemblyCopyright( "Copyright 2014 © Jeremy Tammik Autodesk Inc." )]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
