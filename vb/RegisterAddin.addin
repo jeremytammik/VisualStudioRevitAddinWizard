@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ansi"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Command">
     <Text>Command $projectname$</Text>
