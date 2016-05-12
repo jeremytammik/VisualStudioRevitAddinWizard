@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription( "Revit Add-In Description for $projectname$" )]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Autodesk Inc.")]
-[assembly: AssemblyProduct( "$projectname$ Revit Add-In" )]
-[assembly: AssemblyCopyright( "Copyright 2015 © Jeremy Tammik Autodesk Inc." )]
+[assembly: AssemblyProduct( "$projectname$ Revit C# .NET Add-In" )]
+[assembly: AssemblyCopyright( "Copyright 2016 (C) Jeremy Tammik, Autodesk Inc." )]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2016.0.0.0")]
-[assembly: AssemblyFileVersion("2016.0.0.0")]
+[assembly: AssemblyVersion("2017.0.0.0")]
+[assembly: AssemblyFileVersion("2017.0.0.0")]
