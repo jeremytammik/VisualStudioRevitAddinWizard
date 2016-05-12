@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("$projectname$")>
-<Assembly: AssemblyDescription("Revit Visual Basic Add-in Description for $projectname$")>
+<Assembly: AssemblyDescription("Description for $projectname$")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("$projectname$ Revit Add-in")>
-<Assembly: AssemblyCopyright("Copyright © 2015 by Jeremy Tammik, Autodesk Inc.")>
+<Assembly: AssemblyProduct("$projectname$ Visual Basic .NET Revit Add-in")>
+<Assembly: AssemblyCopyright("Copyright (C) 2016 by Jeremy Tammik, Autodesk Inc.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2016.0.*")>
-<Assembly: AssemblyFileVersion("2016.0.*")>
+<Assembly: AssemblyVersion("2017.0.*")>
+<Assembly: AssemblyFileVersion("2017.0.*")>
