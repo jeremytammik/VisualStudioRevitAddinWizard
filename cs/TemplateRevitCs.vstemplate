@@ -1,8 +1,8 @@
 <VSTemplate Type="Project" Version="2.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
-        <Name>Revit 2017 Addin</Name>
-        <Description>Class library template for a Revit 2017 C# .NET add-in project</Description>
+        <Name>Revit MultiVersion Addin Project Template</Name>
+        <Description>Class library template for a Revit 2014 to 2017 C# .NET add-in project</Description>
         <Icon>TemplateIcon.ico</Icon>
         <ProjectType>CSharp</ProjectType>
         <CreateNewFolder>true</CreateNewFolder>
@@ -14,7 +14,10 @@
     <TemplateContent>
         <Project ReplaceParameters="true" File="TemplateRevitCs.csproj">
             <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.csproj.user">TemplateRevitCs.csproj.user</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.addin">RegisterAddin.addin</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$-2014.addin">Addins\RegisterAddin-2014.addin</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="$projectname$-2015.addin">Addins\RegisterAddin-2015.addin</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="$projectname$-2016.addin">Addins\RegisterAddin-2016.addin</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="$projectname$-2017.addin">Addins\RegisterAddin-2017.addin</ProjectItem>
             <ProjectItem ReplaceParameters="true">App.cs</ProjectItem>
             <ProjectItem ReplaceParameters="true">Command.cs</ProjectItem>
             <ProjectItem ReplaceParameters="true">Properties\AssemblyInfo.cs</ProjectItem>
