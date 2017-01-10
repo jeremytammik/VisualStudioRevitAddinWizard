@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command $projectname$</Text>
+    <Description>Some description for $projectname$</Description>
+    <Assembly>$projectname$.dll</Assembly>
+    <FullClassName>$safeprojectname$.Command</FullClassName>
+    <ClientId>$guid1$</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application $projectname$</Name>
+    <Assembly>$projectname$.dll</Assembly>
+    <FullClassName>$safeprojectname$.App</FullClassName>
+    <ClientId>$guid2$</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

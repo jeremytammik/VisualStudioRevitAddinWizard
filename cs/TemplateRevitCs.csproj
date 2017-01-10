@@ -1,198 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-
-	<!-- Global Properties -->
-	<PropertyGroup>
-		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug-2017</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
-		<OutputType>Library</OutputType>
-		<AppDesignerFolder>Properties</AppDesignerFolder>
-		<RootNamespace>$safeprojectname$</RootNamespace>
-		<AssemblyName>$safeprojectname$</AssemblyName>
-		<TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-	</PropertyGroup>
-
-	<!-- Debug and Release Properties -->
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2014' Or '$(Configuration)' == 'Debug-2015' Or '$(Configuration)' == 'Debug-2016' Or '$(Configuration)' == 'Debug-2017'">
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Release-2014' Or '$(Configuration)' == 'Release-2015' Or '$(Configuration)' == 'Release-2016' Or '$(Configuration)' == 'Release-2017'">
-		<DebugType>pdbonly</DebugType>
-		<Optimize>true</Optimize>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport> 
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-
-	<!-- Revit Version Properties -->
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2014' Or '$(Configuration)' == 'Release-2014'">
-		<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-		<StartAction>Program</StartAction>
-		<StartProgram>$(ProgramW6432)\Autodesk\Revit 2014\Revit.exe</StartProgram>	
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2015' Or '$(Configuration)' == 'Release-2015'">
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-		<StartAction>Program</StartAction>
-		<StartProgram>$(ProgramW6432)\Autodesk\Revit 2015\Revit.exe</StartProgram>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2016' Or '$(Configuration)' == 'Release-2016'">
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-		<StartAction>Program</StartAction>
-		<StartProgram>$(ProgramW6432)\Autodesk\Revit 2016\Revit.exe</StartProgram>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2017' Or '$(Configuration)' == 'Release-2017'">
-		<TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-		<StartAction>Program</StartAction>
-		<StartProgram>$(ProgramW6432)\Autodesk\Revit 2017\Revit.exe</StartProgram>
-	</PropertyGroup>
-
-	<!-- Debug, Release and Revit Version Properties -->
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2014'">
-		<OutputPath>bin\Debug-2014\</OutputPath>
-		<DefineConstants>DEBUG;TRACE;R2014</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2015'">
-		<OutputPath>bin\Debug-2015\</OutputPath>
-		<DefineConstants>DEBUG;TRACE;R2015</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2016'">
-		<OutputPath>bin\Debug-2016\</OutputPath>
-		<DefineConstants>DEBUG;TRACE;R2016</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2017'">
-		<OutputPath>bin\Debug-2017\</OutputPath>
-		<DefineConstants>DEBUG;TRACE;R2017</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Release-2014'">
-		<OutputPath>bin\Release-2014\</OutputPath>
-		<DefineConstants>DEBUG;R2014</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Release-2015'">
-		<OutputPath>bin\Release-2015\</OutputPath>
-		<DefineConstants>DEBUG;R2015</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Release-2016'">
-		<OutputPath>bin\Release-2016\</OutputPath>
-		<DefineConstants>DEBUG;R2016</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Release-2017'">
-		<OutputPath>bin\Release-2017</OutputPath>
-		<DefineConstants>DEBUG;R2017</DefineConstants>
-	</PropertyGroup>
-
-	<!-- Global References -->
-	<ItemGroup>
-		<Reference Include="System" />
-	</ItemGroup>
-
-	<!-- Revit Version References -->
-	<ItemGroup Condition="'$(Configuration)' == 'Debug-2014' Or '$(Configuration)' == 'Release-2014'">
-		<Reference Include="RevitAPI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2014\RevitAPI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="RevitAPIUI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2014\RevitAPIUI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemGroup Condition="'$(Configuration)' == 'Debug-2015' Or '$(Configuration)' == 'Release-2015'">
-		<Reference Include="RevitAPI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2015\RevitAPI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="RevitAPIUI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2015\RevitAPIUI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemGroup Condition="'$(Configuration)' == 'Debug-2016' Or '$(Configuration)' == 'Release-2016'">
-		<Reference Include="RevitAPI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2016\RevitAPI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="RevitAPIUI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2016\RevitAPIUI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemGroup Condition="'$(Configuration)' == 'Debug-2017' Or '$(Configuration)' == 'Release-2017'">
-		<Reference Include="RevitAPI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2017\RevitAPI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="RevitAPIUI">
-			<HintPath>$(ProgramW6432)\Autodesk\Revit 2017\RevitAPIUI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-
-	<!-- Files to compile -->
-	<ItemGroup>
-		<Compile Include="App.cs" />
-		<Compile Include="Command.cs" />
-		<Compile Include="Properties\AssemblyInfo.cs" />
-	</ItemGroup>
-
-	<!-- Content -->
-	<ItemGroup>
-		<Content Include="Addins\$projectname$-2014.addin" />
-		<Content Include="Addins\$projectname$-2015.addin" />
-		<Content Include="Addins\$projectname$-2016.addin" />
-		<Content Include="Addins\$projectname$-2017.addin" />
-	</ItemGroup>
-
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2014'">
-		<PostBuildEvent>
-			copy "Addins\$(ProjectDir)*2014.addin" "$(AppData)\Autodesk\REVIT\Addins\2014"
-			copy "$(ProjectDir)bin\Debug-2014\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2014"
-		</PostBuildEvent>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2015'">
-		<PostBuildEvent>
-			copy "Addins\$(ProjectDir)*2015.addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
-			copy "$(ProjectDir)bin\Debug-2015\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2015"
-		</PostBuildEvent>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2016'">
-		<PostBuildEvent>
-			copy "Addins\$(ProjectDir)*2016.addin" "$(AppData)\Autodesk\REVIT\Addins\2016"
-			copy "$(ProjectDir)bin\Debug-2016\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2016"
-		</PostBuildEvent>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug-2017'">
-		<PostBuildEvent>
-			copy "Addins\$(ProjectDir)*2017.addin" "$(AppData)\Autodesk\REVIT\Addins\2017"
-			copy "$(ProjectDir)bin\Debug-2017\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2017"
-		</PostBuildEvent>
-	</PropertyGroup>
-
-	<!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+      None
+    </ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2017\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2017\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RevitAPI">
+      <HintPath>$(ProgramW6432)\Autodesk\Revit 2017\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>$(ProgramW6432)\Autodesk\Revit 2017\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$projectname$.addin" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2017"
+copy "$(ProjectDir)bin\debug\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2017"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
   </Target>
   -->
-	<Target Name="AfterClean">
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2014\$projectname$-2014.addin" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2014\$projectname$.dll" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2015\$projectname$-2015.addin" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2015\$projectname$.dll" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2016\$projectname$-2016.addin" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2016\$projectname$.dll" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$-2017.addin" />
-		<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$.dll" />
-	</Target>
+  <Target Name="AfterClean">
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$.dll" />
+  </Target>
 </Project>
