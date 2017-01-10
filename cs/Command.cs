@@ -41,14 +41,6 @@ namespace $safeprojectname$
       foreach( Element e in col )
       {
         Debug.Print( e.Name );
-		
-#if R2014
-        Parameter parameter = e.get_Parameter("parametername");
-#endif
-
-#if R2015 || R2016 || R2017
-        Parameter parameter = e.LookupParameter("parametername");
-#endif
       }
 
       // Modify document within a transaction
