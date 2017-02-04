@@ -3,7 +3,7 @@
   <AddIn Type="Command">
     <Text>Command $projectname$</Text>
     <Description>Some description for $projectname$</Description>
-    <Assembly>$projectname$.dll</Assembly>
+    <Assembly>$projectname$/$projectname$.dll</Assembly>
     <FullClassName>$safeprojectname$.Command</FullClassName>
     <ClientId>$guid1$</ClientId>
     <VendorId>com.typepad.thebuildingcoder</VendorId>
@@ -11,7 +11,7 @@
   </AddIn>
   <AddIn Type="Application">
     <Name>Application $projectname$</Name>
-    <Assembly>$projectname$.dll</Assembly>
+    <Assembly>$projectname$/$projectname$.dll</Assembly>
     <FullClassName>$safeprojectname$.App</FullClassName>
     <ClientId>$guid2$</ClientId>
     <VendorId>com.typepad.thebuildingcoder</VendorId>
