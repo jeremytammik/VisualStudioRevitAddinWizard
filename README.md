@@ -7,6 +7,17 @@ Documentation is provided by [The Building Coder](http://thebuildingcoder.typepa
 Installation is accomplished by cloning this repository and running the installer batch file [install.bat](install.bat) as described in The Building Coder discussion of the [Revit Add-In Wizards on GitHub and Installer](http://thebuildingcoder.typepad.com/blog/2015/08/revit-add-in-wizard-github-installer.html).
 
 
+## Revit2017AddInTemplateSet
+
+Please also note the alternative, more complex and 
+full-fledged 
+[Revit2017AddInTemplateSet](https://github.com/Andrey-Bushman/Revit2017AddInTemplateSet) provided
+by [Andrey Bushman](https://github.com/Andrey-Bushman).
+
+For a full discussion of that and comparison of the two, please refer to the discussion of 
+the [New Visual Studio Templates for Revit Add-Ins](http://thebuildingcoder.typepad.com/blog/2017/02/new-visual-studio-2015-templates-for-revit-add-ins.html).
+
+
 ## Author
 
 Jeremy Tammik,
