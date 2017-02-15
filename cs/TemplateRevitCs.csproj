@@ -27,6 +27,8 @@
     <WarningLevel>4</WarningLevel>
     <StartAction>Program</StartAction>
     <StartProgram>$(ProgramW6432)\Autodesk\Revit 2017\Revit.exe</StartProgram>
+	<StartArguments>/language ENU</StartArguments>
+	<EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -60,7 +62,8 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2017"
-copy "$(ProjectDir)bin\debug\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2017"</PostBuildEvent>
+mkdir "$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$"
+xcopy /Y /E /R "$(ProjectDir)bin\debug\*" "$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -71,6 +74,6 @@ copy "$(ProjectDir)bin\debug\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2017"</Pos
   -->
   <Target Name="AfterClean">
     <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$.addin" />
-    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$.dll" />
+	<RemoveDir Directories="$(AppData)\Autodesk\REVIT\Addins\2017\$projectname$" />
   </Target>
 </Project>
