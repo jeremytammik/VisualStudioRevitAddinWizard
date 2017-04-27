@@ -1,8 +1,6 @@
-# VisualStudioRevitAddinWizard
+# Visual Studio Revit Add-in Templates
 
-Visual Studio wizards to generate C# and VB .NET Revit add-ins.
-
-Actually, as Andrey pointed out, these are not real wizards, just rather dumb and simple templates. He provides [more intelligent ones](#revit2017addintemplateset), although still just templates.
+Visual Studio templates to generate C# and VB .NET Revit add-ins.
 
 Documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
 on [Visual Studio Revit Add-In Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
