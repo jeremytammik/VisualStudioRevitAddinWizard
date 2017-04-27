@@ -3,7 +3,7 @@
 Visual Studio templates to generate C# and VB .NET Revit add-ins.
 
 Documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
-on [Visual Studio Revit Add-In Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
+on [Visual Studio Revit add-in templates](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
 
 
 ## Installation
