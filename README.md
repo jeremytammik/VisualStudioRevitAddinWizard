@@ -5,6 +5,9 @@ Visual Studio templates to generate C# and VB .NET Revit add-ins.
 Documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
 on [Visual Studio Revit Add-In Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
 
+
+## Installation
+
 Installation is accomplished by cloning this repository and running the installer batch
 file [install.bat](install.bat) as described in The Building Coder discussion of
 the [Revit Add-In Wizards on GitHub and Installer](http://thebuildingcoder.typepad.com/blog/2015/08/revit-add-in-wizard-github-installer.html).
