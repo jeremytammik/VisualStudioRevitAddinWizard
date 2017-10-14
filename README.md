@@ -1,5 +1,10 @@
 # Visual Studio Revit Add-in Templates
 
+![Revit API](https://img.shields.io/badge/Revit%20API-2018-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg)
+![.NET](https://img.shields.io/badge/.NET-4.5.2-blue.svg)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
+
 Visual Studio templates to generate C# and VB .NET Revit add-ins.
 
 Documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
