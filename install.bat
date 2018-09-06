@@ -11,7 +11,7 @@ zip -r "%F%" *
 cd ..
 echo Copying C# wizard archive to %D%\Visual C#...
 copy "%F%" "%D%\Visual C#"
-set "F=%TEMP%\Revit2018AddinWizardVb0.zip"
+set "F=%TEMP%\Revit2019AddinWizardVb0.zip"
 echo Creating VB wizard archive %F%...
 cd vb
 zip -r "%F%" *
