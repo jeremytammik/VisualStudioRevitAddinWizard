@@ -4,7 +4,7 @@ if exist cs (goto okcs) else (echo "No cs folder found." && goto exit)
 if exist vb (goto okvb) else (echo "No vb folder found." && goto exit)
 :okvb
 set "D=%userprofile%\Documents\Visual Studio 2015\Templates\ProjectTemplates"
-set "F=%TEMP%\Revit2018AddinWizardCs0.zip"
+set "F=%TEMP%\Revit2019AddinWizardCs0.zip"
 echo Creating C# wizard archive %F%...
 cd cs
 zip -r "%F%" *
