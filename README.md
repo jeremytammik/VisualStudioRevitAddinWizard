@@ -17,11 +17,9 @@ Installation can be accomplished by cloning this repository and running the inst
 file [install.bat](install.bat) as described in The Building Coder discussion of
 the [Revit Add-In Wizards on GitHub and Installer](http://thebuildingcoder.typepad.com/blog/2015/08/revit-add-in-wizard-github-installer.html).
 
-The installation requires a [zip utility](https://en.wikipedia.org/wiki/Info-ZIP) to be set up and accessible via the `PATH` variable.
-
-Currently, the installation directories are still set up for Visual Studio 2015.
-Change that if you are using a later version.
-
+```
+install.bat [Visual Studio Year - 2019, 2017, 2015]
+```
 
 ## Revit2017AddInTemplateSet
 
