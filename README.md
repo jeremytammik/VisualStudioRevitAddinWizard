@@ -5,9 +5,11 @@
 ![.NET](https://img.shields.io/badge/.NET-4.7-blue.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
-Visual Studio templates to generate C# and VB .NET Revit add-ins.
+The Visual Studio Revit add-in wizards provide Visual Studio templates for generating C# and VB .NET Revit add-ins.
 
-Documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
+They enable the instantaneous and automatic generation, installation and debugging of a new Revit add-in skeleton with one single click.
+
+Ample documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
 on [Visual Studio Revit add-in templates](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
 
 
@@ -23,12 +25,12 @@ install.bat [Visual Studio Year - 2019, 2017, 2015]
 
 ## Revit2017AddInTemplateSet
 
-Please also note the alternative, more complex and 
-full-fledged 
+Please also note the alternative, more complex and
+full-fledged
 [Revit2017AddInTemplateSet](https://github.com/Andrey-Bushman/Revit2017AddInTemplateSet) provided
 by [Andrey Bushman](https://github.com/Andrey-Bushman).
 
-For a full discussion of that and comparison of the two, please refer to the discussion of 
+For a full discussion of that and comparison of the two, please refer to the discussion of
 the [New Visual Studio Templates for Revit Add-Ins](http://thebuildingcoder.typepad.com/blog/2017/02/new-visual-studio-2015-templates-for-revit-add-ins.html).
 
 
