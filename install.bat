@@ -6,13 +6,13 @@ if exist vb (goto okvb) else (echo "No vb folder found." && goto exit)
 :okvb
 
 if [%1]==[] (
-	set "D=%userprofile%\Documents\Visual Studio 2019\Templates\ProjectTemplates"
-	if not exist "%D%" ( set "D=%userprofile%\Documents\Visual Studio 2017\Templates\ProjectTemplates" )
-	if not exist "%D%" (set "D=%userprofile%\Documents\Visual Studio 2015\Templates\ProjectTemplates" )
+  echo Please specify Visual Studio version, e.g., 2017
+  goto exit
 ) else (
 	echo Using version %1
 	set "D=%userprofile%\Documents\Visual Studio %1\Templates\ProjectTemplates"
 )
+
 set "F=%TEMP%\Revit2020AddinWizardCs0.zip"
 echo Creating C# wizard archive %F%...
 cd cs
