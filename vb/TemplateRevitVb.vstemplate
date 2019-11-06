@@ -5,6 +5,10 @@
         <Description>Class library template for a Revit 2020 Visual Basic .NET add-in project</Description>
         <Icon>TemplateIcon.ico</Icon>
         <ProjectType>VisualBasic</ProjectType>
+        <LanguageTag>Visual Basic</LanguageTag>
+        <PlatformTag>windows</PlatformTag>
+        <ProjectTypeTag>extension</ProjectTypeTag>
+        <ProjectTypeTag>desktop</ProjectTypeTag>
         <CreateNewFolder>true</CreateNewFolder>
         <DefaultName>RevitAddin</DefaultName>
         <ProvideDefaultName>true</ProvideDefaultName>
