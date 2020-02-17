@@ -19,12 +19,12 @@ cd cs
 ..\zip\zip.exe -r "%F%" *
 cd ..
 echo Copying C# wizard archive to %D%\Visual C#...
-copy "%F%" "%D%\Visual C#"
+xcopy "%F%" "%D%\Visual C#\"
 set "F=%TEMP%\Revit2020AddinWizardVb0.zip"
 echo Creating VB wizard archive %F%...
 cd vb
 ..\zip\zip.exe -r "%F%" *
 cd ..
 echo Copying VB wizard archive to %D%\Visual Basic...
-copy "%F%" "%D%\Visual Basic"
+xcopy "%F%" "%D%\Visual Basic\"
 :exit
