@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Description for $projectname$")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("$projectname$ Visual Basic .NET Revit Add-in")>
-<Assembly: AssemblyCopyright("Copyright (C) 2019 by Jeremy Tammik, Autodesk Inc.")>
+<Assembly: AssemblyCopyright("Copyright (C) 2020 by Jeremy Tammik, Autodesk Inc.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
