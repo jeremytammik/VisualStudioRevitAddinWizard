@@ -16,7 +16,7 @@
     <RootNamespace>$safeprojectname$</RootNamespace>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>On</OptionStrict>
@@ -32,7 +32,7 @@
     <NoWarn>
     </NoWarn>
     <StartAction>Program</StartAction>
-    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2020\Revit.exe</StartProgram>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2021\Revit.exe</StartProgram>
     <Prefer32Bit>false</Prefer32Bit>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
@@ -46,17 +46,17 @@
     <NoWarn>
     </NoWarn>
     <StartAction>Program</StartAction>
-    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2020\Revit.exe</StartProgram>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2021\Revit.exe</StartProgram>
     <Prefer32Bit>false</Prefer32Bit>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RevitAPI">
-      <HintPath>$(ProgramW6432)\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
+      <HintPath>$(ProgramW6432)\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>$(ProgramW6432)\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
+      <HintPath>$(ProgramW6432)\Autodesk\Revit 2021\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -84,12 +84,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="AfterClean">
-	<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2020\$projectname$.addin" />
-	<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2020\$projectname$.dll" />
+	<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2021\$projectname$.addin" />
+	<Delete Files="$(AppData)\Autodesk\REVIT\Addins\2021\$projectname$.dll" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)$projectname$.addin" "$(AppData)\Autodesk\REVIT\Addins\2020"
-copy "$(ProjectDir)bin\debug\$projectname$.dll" "$(AppData)\Autodesk\REVIT\Addins\2020"
+    <PostBuildEvent>copy "$(ProjectDir)$projectname$.addin" "$(AppData)\Autodesk\REVIT\Addins\2021"
+copy "$(ProjectDir)bin\debug\$projectname$.dll" "$(AppData)\Autodesk\REVIT\Addins\2021"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>

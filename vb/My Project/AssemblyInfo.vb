@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Description for $projectname$")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("$projectname$ Visual Basic .NET Revit Add-in")>
-<Assembly: AssemblyCopyright("Copyright (C) 2020 by Jeremy Tammik, Autodesk Inc.")>
+<Assembly: AssemblyCopyright("Copyright (C) 2021 by Jeremy Tammik, Autodesk Inc.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2020.0.0.0")>
-<Assembly: AssemblyFileVersion("2020.0.0.0")>
+<Assembly: AssemblyVersion("2021.0.0.0")>
+<Assembly: AssemblyFileVersion("2021.0.0.0")>
