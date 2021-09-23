@@ -35,7 +35,9 @@ Here are some of them:
   by [Andrey Bushman](https://github.com/Andrey-Bushman);
   for a full discussion of that and comparison of the two, please refer to the article 
   on [new Visual Studio templates for Revit add-ins](http://thebuildingcoder.typepad.com/blog/2017/02/new-visual-studio-2015-templates-for-revit-add-ins.html)
-
+- [Revit2018AddInTemplateSet](https://thebuildingcoder.typepad.com/blog/2017/09/revit-20181-nuget-packages-rooms-and-views-in-forge.html#3)
+- [Multi-Version Revit Add-In Template](https://thebuildingcoder.typepad.com/blog/2018/07/vacation-and-multi-version-revit-add-in-template.html#2)
+  by Yaroslav Zhmayev  
 
 ## Author
 
