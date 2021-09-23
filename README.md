@@ -38,6 +38,10 @@ Here are some of them:
 - [Revit2018AddInTemplateSet](https://thebuildingcoder.typepad.com/blog/2017/09/revit-20181-nuget-packages-rooms-and-views-in-forge.html#3)
 - [Multi-Version Revit Add-In Template](https://thebuildingcoder.typepad.com/blog/2018/07/vacation-and-multi-version-revit-add-in-template.html#2)
   by Yaroslav Zhmayev  
+- [Revit WPF Template](https://thebuildingcoder.typepad.com/blog/2020/01/revit-wpf-add-ins-and-template.html#3)
+  by Petr Mitev
+- [Hellpie dotnet Revit add-in template](https://thebuildingcoder.typepad.com/blog/2020/11/bim360-management-dotnet-template-and-prism-goodies.html#4)
+  by Diego Rossi 
 
 ## Author
 
