@@ -23,15 +23,18 @@ the [Revit Add-In Wizards on GitHub and Installer](http://thebuildingcoder.typep
 install.bat [Visual Studio Year - 2019, 2017, 2015]
 ```
 
-## Revit2017AddInTemplateSet
+## Alternatives
 
-Please also note the alternative, more complex and
-full-fledged
-[Revit2017AddInTemplateSet](https://github.com/Andrey-Bushman/Revit2017AddInTemplateSet) provided
-by [Andrey Bushman](https://github.com/Andrey-Bushman).
+Several alternative Revit add-in templates have been published.
 
-For a full discussion of that and comparison of the two, please refer to the discussion of
-the [New Visual Studio Templates for Revit Add-Ins](http://thebuildingcoder.typepad.com/blog/2017/02/new-visual-studio-2015-templates-for-revit-add-ins.html).
+Many of them are much more complex and full-fledged than this minimalistic one, providing support for multiple Revit releases, WPF, languages, etc.
+
+Here are some of them:
+
+- [Revit2017AddInTemplateSet](https://github.com/Andrey-Bushman/Revit2017AddInTemplateSet) 
+  by [Andrey Bushman](https://github.com/Andrey-Bushman);
+  for a full discussion of that and comparison of the two, please refer to the article 
+  on [new Visual Studio templates for Revit add-ins](http://thebuildingcoder.typepad.com/blog/2017/02/new-visual-studio-2015-templates-for-revit-add-ins.html)
 
 
 ## Author
