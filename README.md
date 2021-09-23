@@ -27,7 +27,7 @@ install.bat [Visual Studio Year - 2019, 2017, 2015]
 
 Several alternative Revit add-in templates have been published.
 
-They are all more complex and full-fledged than this minimalistic one, tasking advantage of .NET configuration functionality, providing support for multiple Revit releases, WPF, languages, build systems, installers, Autodesk AppStore support, etc.
+They are all more complex and full-fledged than this minimalistic one, taking advantage of .NET configuration functionality, providing support for multiple Revit releases, WPF, languages, build systems, installers, Autodesk AppStore support, etc.
 
 Here are some of them:
 
