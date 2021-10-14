@@ -44,7 +44,10 @@ Here are some of them:
   by Diego Rossi
 - [Multiversion Revit plugins explained](https://www.matterlab.co/post/multiversion-revit-plugins-explained) 
   by Alvaro Ortega [@alvpickmans](https://github.com/alvpickmans) Pickmans of [matterlab](https://www.matterlab.co)
-  including a comprehensive [multiversion-revit-plugin-sample](https://github.com/alvpickmans/multiversion-revit-plugin-sample) 
+  including a comprehensive [multiversion-revit-plugin-sample](https://github.com/alvpickmans/multiversion-revit-plugin-sample)
+- Manual approach
+  to [maintain a multi-version add-in in multiple projects in single `SLN`](https://thebuildingcoder.typepad.com/blog/2021/10/dll-as-resource-and-multi-version-add-ins.html#4.2)
+  by Pablo Derendinger
 
 ## Author
 
