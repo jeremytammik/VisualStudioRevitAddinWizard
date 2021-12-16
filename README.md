@@ -20,7 +20,7 @@ file [install.bat](install.bat) as described in The Building Coder discussion of
 the [Revit Add-In Wizards on GitHub and Installer](http://thebuildingcoder.typepad.com/blog/2015/08/revit-add-in-wizard-github-installer.html).
 
 ```
-install.bat [Visual Studio Year - 2019, 2017, 2015]
+install.bat [Visual Studio Year - 2022, 2019, 2017, 2015]
 ```
 
 ## Alternatives
