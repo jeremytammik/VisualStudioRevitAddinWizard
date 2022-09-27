@@ -20,6 +20,7 @@ cd cs
 cd ..
 echo Copying C# wizard archive to %D%\Visual C#...
 xcopy "%F%" "%D%\Visual C#\"
+xcopy "%F%" "%D3%\CSharp\"
 set "F=%TEMP%\Revit2023AddinWizardVb0.zip"
 echo Creating VB wizard archive %F%...
 cd vb

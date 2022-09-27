@@ -23,6 +23,14 @@ the [Revit Add-In Wizards on GitHub and Installer](http://thebuildingcoder.typep
 install.bat [Visual Studio Year - 2022, 2019, 2017, 2015]
 ```
 
+### User Project Template Location
+
+Ensure that the destination path specified in `install.bat` matches your user project template location.
+You can change the known location for user templates in Tools &gt; Options &gt; Projects and Solutions &gt; Locations, cf.,
+[how to locate and organize project and item templates](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?source=recommendations&view=vs-2022):
+
+<img src="img/vs_2019_project_template_location.png" alt="User project template location" title="User project template location" width="638"/> <!-- 1276 -->
+
 ## Alternatives
 
 Several alternative Revit add-in templates have been published.
