@@ -10,7 +10,8 @@ if [%1]==[] (
   goto exit
 ) else (
   echo Using version %1
-  set "D=%userprofile%\Documents\Visual Studio %1\Templates\ProjectTemplates"
+  rem set "D=%userprofile%\Documents\Visual Studio %1\Templates\ProjectTemplates"
+  set "D=Y:\Documents\Visual Studio %1\Templates\ProjectTemplates"
 )
 
 set "F=%TEMP%\Revit2023AddinWizardCs0.zip"
