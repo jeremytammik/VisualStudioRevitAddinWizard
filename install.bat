@@ -11,7 +11,7 @@ if [%1]==[] (
 ) else (
   echo Using version %1
   rem set "D=%userprofile%\Documents\Visual Studio %1\Templates\ProjectTemplates"
-  set "D=Y:\Documents\Visual Studio %1\Templates\ProjectTemplates"
+  set "D=C:\Documents\Visual Studio %1\Templates\ProjectTemplates"
 )
 
 set "F=%TEMP%\Revit2023AddinWizardCs0.zip"
@@ -21,7 +21,7 @@ cd cs
 cd ..
 echo Copying C# wizard archive to %D%\Visual C#...
 xcopy "%F%" "%D%\Visual C#\"
-xcopy "%F%" "%D3%\CSharp\"
+
 set "F=%TEMP%\Revit2023AddinWizardVb0.zip"
 echo Creating VB wizard archive %F%...
 cd vb
@@ -29,4 +29,5 @@ cd vb
 cd ..
 echo Copying VB wizard archive to %D%\Visual Basic...
 xcopy "%F%" "%D%\Visual Basic\"
+
 :exit
