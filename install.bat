@@ -14,7 +14,7 @@ if [%1]==[] (
 
 set "D=C:\Users\%USERNAME%\Documents\Visual Studio %1\Templates\ProjectTemplates"
 
-set "F=%TEMP%\Revit2024AddinWizardCs0.zip"
+set "F=%TEMP%\Revit2025AddinWizardCs0.zip"
 echo Creating C# wizard archive %F%...
 cd cs
 ..\zip\zip.exe -r "%F%" *
@@ -22,7 +22,7 @@ cd ..
 echo Copying C# wizard archive to %D%\Visual C#...
 xcopy "%F%" "%D%\Visual C#\"
 
-set "F=%TEMP%\Revit2024AddinWizardVb0.zip"
+set "F=%TEMP%\Revit2025AddinWizardVb0.zip"
 echo Creating VB wizard archive %F%...
 cd vb
 ..\zip\zip.exe -r "%F%" *

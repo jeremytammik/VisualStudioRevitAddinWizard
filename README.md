@@ -1,8 +1,8 @@
 # Visual Studio Revit Add-in Templates
 
-![Revit API](https://img.shields.io/badge/Revit%20API-2024-blue.svg)
+![Revit API](https://img.shields.io/badge/Revit%20API-2025-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg)
-![.NET](https://img.shields.io/badge/.NET-4.8-blue.svg)
+![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
 The Visual Studio Revit add-in wizards provide Visual Studio templates for generating C# and VB .NET Revit add-ins.
@@ -29,7 +29,7 @@ Ensure that the destination path specified in `install.bat` matches your user pr
 You can change the known location for user templates in Tools &gt; Options &gt; Projects and Solutions &gt; Locations, cf.,
 [how to locate and organize project and item templates](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?source=recommendations&view=vs-2022):
 
-<img src="img/vs_2019_project_template_location.png" alt="User project template location" title="User project template location" width="638"/> <!-- 1276 -->
+<img src="img/vs_2022_project_template_location.png" alt="User project template location" title="User project template location" width="638"/> <!-- 1276 -->
 
 ## Alternatives
 
