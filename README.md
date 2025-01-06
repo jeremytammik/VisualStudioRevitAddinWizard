@@ -5,9 +5,11 @@
 ![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
-The Visual Studio Revit add-in wizards provide Visual Studio templates for generating C# and VB .NET Revit add-ins.
+The Visual Studio Revit add-in wizard provides a Visual Studio template for generating C# .NET Revit add-ins.
 
-They enable the instantaneous and automatic generation, installation and debugging of a new Revit add-in skeleton with one single click.
+It enables the instantaneous and automatic generation, installation and debugging of a new C# Revit add-in skeleton with one single click.
+
+Obsolete VB.NET templates are still included, but no longer updated or maintained.
 
 Ample documentation is provided in [The Building Coder](http://thebuildingcoder.typepad.com) topic group
 on [Visual Studio Revit add-in templates](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
